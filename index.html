@@ -289,8 +289,8 @@ section{padding:96px 0;scroll-margin-top:72px}
 .rv{scroll-snap-align:start;background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px;display:flex;flex-direction:column;gap:10px}
 .rv .stars{color:var(--amber);letter-spacing:2px;font-size:.95rem}
 .rv p{color:var(--ink2);font-size:.95rem;flex:1}
-.rv footer b{display:block;font-size:.9rem}
-.rv footer span{font-size:.78rem;color:var(--mute)}
+.rv .who b{display:block;font-size:.9rem}
+.rv .who span{font-size:.78rem;color:var(--mute)}
 .rv .own{font-size:.8rem;color:var(--ink2);border-left:2px solid var(--amber);padding-left:10px;margin-top:4px}
 .rv-nav{display:flex;gap:8px;margin-top:12px}
 .rv-nav button{width:40px;height:40px;border:1px solid var(--line);background:var(--white);border-radius:4px;font:inherit;cursor:pointer;color:var(--ink)}
@@ -303,13 +303,13 @@ section{padding:96px 0;scroll-margin-top:72px}
 @media(max-width:800px){.arch img{height:260px}}
 
 /* FOOTER */
-footer{background:var(--dark);color:var(--on-dark2);padding:56px 0 32px;font-size:.9rem}
-footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
-footer h4{color:var(--on-dark);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
-footer a{color:var(--on-dark2);text-decoration:none;display:block;margin-bottom:6px}
-footer a:hover{color:var(--on-dark)}
-footer .fine{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.8rem}
-@media(max-width:800px){footer .cols{grid-template-columns:1fr 1fr}}
+footer.site{background:var(--dark);color:var(--on-dark2);padding:56px 0 32px;font-size:.9rem}
+footer.site .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+footer.site h4{color:var(--on-dark);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+footer.site a{color:var(--on-dark2);text-decoration:none;display:block;margin-bottom:6px}
+footer.site a:hover{color:var(--on-dark)}
+footer.site .fine{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.8rem}
+@media(max-width:800px){footer.site .cols{grid-template-columns:1fr 1fr}}
 .note{position:fixed;bottom:14px;left:14px;z-index:60;background:#1B1815;color:#EFE7DA;font-size:.72rem;padding:8px 12px;border-radius:4px;border:1px solid rgba(255,255,255,.15);opacity:.9}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -582,10 +582,10 @@ footer .fine{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,
       <div class="g"><b>5,0</b><div class="stars">★★★★★</div><span>221 opinii łącznie · 4 wizytówki</span><a href="https://www.google.com/maps/search/smartparkiet+warszawa" target="_blank" rel="noopener">Zobacz w Google →</a></div>
     </div>
     <div class="rv-strip" id="rvStrip">
-      <article class="rv"><div class="stars">★★★★★</div><p>„Mogę śmiało polecić firmę smartparkiet. Doskonały, szybki, przejrzysty kontakt. Oględziny na miejscu, wycena, ustalenie terminu na za 2 tyg. Po 2 dniach pracy parkiet otrzymał drugie życie.”</p><footer><b>Mateusz Głębicki</b><span>Lokalny przewodnik · 4 mies. temu · Suflerska</span></footer><div class="own">Odpowiedź właściciela: „Szybki kontakt, oględziny na miejscu, bezpłatna wycena, krótkie terminy…”</div></article>
-      <article class="rv"><div class="stars">★★★★★</div><p>„Zdecydowanie polecam tę firmę. Podłoga wygląda świetnie – cyklinowanie z uzupełnieniem przestrzeni między deskami + listwy. Prace na powierzchni blisko 60 m² zostały wykonane sprawnie, w zaledwie dwa dni.”</p><footer><b>Andrzej G.</b><span>9 opinii · 3 mies. temu · Suflerska</span></footer><div class="own">Odpowiedź właściciela: „Współpraca na piątkę. Artur”</div></article>
-      <article class="rv"><div class="stars">★★★★★</div><p>„Firma rzetelna, terminowa i profesjonalna. Pan Jarosław znakomicie zna się na renowacji starych parkietów. Potrafi doradzić i znaleźć sensowne rozwiązania. Nie ma rzeczy niemożliwych.”</p><footer><b>Al</b><span>Lokalny przewodnik · 3 mies. temu · Suflerska</span></footer><div class="own">Odpowiedź właściciela: „Jarek to aktualnie najlepszy parkieciarz w Warszawie…”</div></article>
-      <article class="rv"><div class="stars">★★★★★</div><p>„Zdecydowanie polecam firmę SMART PARKIET!”</p><footer><b>opinia z wizytówki</b><span>Grójecka</span></footer></article>
+      <article class="rv"><div class="stars">★★★★★</div><p>„Mogę śmiało polecić firmę smartparkiet. Doskonały, szybki, przejrzysty kontakt. Oględziny na miejscu, wycena, ustalenie terminu na za 2 tyg. Po 2 dniach pracy parkiet otrzymał drugie życie.”</p><div class="who"><b>Mateusz Głębicki</b><span>Lokalny przewodnik · 4 mies. temu · Suflerska</span></div><div class="own">Odpowiedź właściciela: „Szybki kontakt, oględziny na miejscu, bezpłatna wycena, krótkie terminy…”</div></article>
+      <article class="rv"><div class="stars">★★★★★</div><p>„Zdecydowanie polecam tę firmę. Podłoga wygląda świetnie – cyklinowanie z uzupełnieniem przestrzeni między deskami + listwy. Prace na powierzchni blisko 60 m² zostały wykonane sprawnie, w zaledwie dwa dni.”</p><div class="who"><b>Andrzej G.</b><span>9 opinii · 3 mies. temu · Suflerska</span></div><div class="own">Odpowiedź właściciela: „Współpraca na piątkę. Artur”</div></article>
+      <article class="rv"><div class="stars">★★★★★</div><p>„Firma rzetelna, terminowa i profesjonalna. Pan Jarosław znakomicie zna się na renowacji starych parkietów. Potrafi doradzić i znaleźć sensowne rozwiązania. Nie ma rzeczy niemożliwych.”</p><div class="who"><b>Al</b><span>Lokalny przewodnik · 3 mies. temu · Suflerska</span></div><div class="own">Odpowiedź właściciela: „Jarek to aktualnie najlepszy parkieciarz w Warszawie…”</div></article>
+      <article class="rv"><div class="stars">★★★★★</div><p>„Zdecydowanie polecam firmę SMART PARKIET!”</p><div class="who"><b>opinia z wizytówki</b><span>Grójecka</span></div></article>
     </div>
     <div class="rv-nav"><button type="button" id="rvPrev" aria-label="Poprzednie">←</button><button type="button" id="rvNext" aria-label="Następne">→</button></div>
     <p class="demo-note">Wersja robocza: opinie wpisane statycznie z wizytówek Google (stan 14.09.2026). Docelowo widget pobiera je automatycznie przez Google Business Profile API – wymaga to dostępu do wizytówek i weryfikacji konta przez Google.</p>
@@ -610,7 +610,7 @@ footer .fine{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,
   </div>
 </section>
 
-<footer>
+<footer class="site">
   <div class="wrap">
     <div class="cols">
       <div>
